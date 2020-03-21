@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>INFO30005 :: Javascript - Workshop #2</title>
+  <script type="text/javascript">
+   function js_new_style(){
+    document.getElementById("text").style.color = "#ff0000";
+    document.getElementById('style1').style.visibility = 'hidden';
+    document.getElementById('style2').style.visibility = 'visible';
+    
+   }
+   function js_old_style(){
+    document.getElementById("text").style.color = "black";
+    document.getElementById('style2').style.visibility = 'hidden';
+    document.getElementById('style1').style.visibility = 'visible';
+   }
+  </script>
+ </head>
+ <body>
+  <p id='text'> Javascript DOM::Changing paragraph style</p>
+  <div>
+   <button id='style1' onclick="js_new_style()">New style</button>
+   <button id='style2' onclick="js_old_style()" style='visibility:hidden'>Previous style</button>
+  </div>
+ </body>
+</html>
